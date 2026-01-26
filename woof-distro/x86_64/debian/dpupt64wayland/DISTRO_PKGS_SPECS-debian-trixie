@@ -214,7 +214,7 @@ yes|gsmartcontrol|gsmartcontrol|exe,dev,doc,nls||deps:yes
 yes|mc|mc|exe,dev,doc,nls||deps:yes
 ####notworking###yes|libreoffice|libreoffice-writer,libreoffice-calc,libreoffice-draw,libreoffice-impress|exe,dev,doc,nls||deps:yes
 yes|gimp|gimp|exe,dev,doc,nls||deps:yes
-yes|testdisk|testdisk|exe,dev,doc,nls||deps:yes
+#yes|testdisk|testdisk|exe,dev,doc,nls||deps:yes
 '
 
 # hack: we need DISTRO_TARGETARCH but PPM needs to be able to source this file
