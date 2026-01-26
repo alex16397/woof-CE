@@ -7,7 +7,6 @@ sed -i 's%</keyboard>%<keybind key="A-z"><action name="Execute"><command>/usr/bi
 
 # temp
 ( cd root/Desktop
-sed -i 's/^Exec.*$/Exec=/usr/bin/chromium/' browse.desktop
 mv browse.desktop browse_app.desktop
 mv file.desktop file_app.desktop
 mv settings.desktop setup_app.desktop
@@ -23,6 +22,9 @@ echo '1=file_app.desktop
 5=trash_app.desktop' > root/.config/zzzfm/desktop0
 
 echo 'minimalapps' > root/.config/zzzfm/applayout
+
+cd /usr/local/bin
+sed -i 's/^exec.*$/exec /usr/bin/chromium/' defaultbrowser
 
 # end temp
 
