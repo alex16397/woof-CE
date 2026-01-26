@@ -7,6 +7,7 @@ sed -i 's%</keyboard>%<keybind key="A-z"><action name="Execute"><command>/usr/bi
 
 # temp
 ( cd root/Desktop
+sed -i 's/^Exec.*$/Exec=/usr/bin/chromium/' browse.desktop
 mv browse.desktop browse_app.desktop
 mv file.desktop file_app.desktop
 mv settings.desktop setup_app.desktop
